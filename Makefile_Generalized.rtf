@@ -1,0 +1,156 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 STIXGeneral-Regular;
+\f3\fnil\fcharset0 AppleSymbols;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+Input 1: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 MolecGeom = Flatten [Table [\{BL 1, BL 2, BL 3\'85, ANG 1, ANG 2, ANG 3...\},
+\f1 \
+
+\f0 \{BL 1, RS, RE, INC\}, \{BL 2, RS, RE, INC\}, \{BL 3, RS, RE, INC\},
+\f1 \
+
+\f0 \{ANG 1, RS, RE, INC\}, \{ANG 2, RS, RE, INC\}, \{ANG 3, RS, RE, INC\}], 2]
+\f1 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Output 1: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 \{BL 1+INC, BL 2+INC, ANG 1+INC, ANG 2+INC\},
+\f1 \
+
+\f0 \{BL 1+INC+INC, BL 2+INC+INC, ANG 1+INC+INC, ANG 2+INC +INC\}
+\f1 \
+\pard\pardeftab720\sl640\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Input 2:\'a0 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 MolecGeom//Dimensions
+\f1 \
+\
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Output 2:
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 \{27,4,4,5,6\}
+\f1 \
+\
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Input 3: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f2 \cf2 \uc0\u55349 \u56421 
+\f0  = 27 
+\f3 \uc0\u8727 
+\f0  4 
+\f3 \uc0\u8727 
+\f0  4 
+\f3 \uc0\u8727 
+\f0  5
+\f1 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Output 3:
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 2160
+\f1 \
+\
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Input 4: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f2 \cf2 \uc0\u55349 \u56375 \u55349 \u56398 \u55349 \u56417 \u55349 \u56398 
+\f0  = ArrayReshape[MolecGeom, \{
+\f2 \uc0\u55349 \u56421 
+\f0 , 6\}]
+\f1 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Output 4: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 \{2.2, 2., 2., 115, 115, 170\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 115, 175\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 115, 180\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 115, 185\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 115, 190\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 120, 170\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 120, 175\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 120, 180\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 120, 185\}
+\f1 \
+
+\f0 \{2.2, 2., 2., 115, 120, 190\}
+\f1 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Input 5:\'a0 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 Data//DeleteDuplicates//Dimensions
+\f1 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Output 5:
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 \{2160,6\}\
+\
+\pard\pardeftab720\sl640\partightenfactor0
+\cf2 Input 6: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 Export [\'93Data. Txt\'94, Data]
+\f1 \
+\pard\pardeftab720\sl640\partightenfactor0
+
+\f0 \cf2 Output 6: 
+\f1 \
+\pard\pardeftab720\sl640\qc\partightenfactor0
+
+\f0 \cf2 Data.txt
+\f1 \
+\
+}
